@@ -1,0 +1,36 @@
+{
+  "name": "typscript-morse-translator",
+  "version": "1.0.0",
+  "description": "Morse translator",
+  "main": "./lib/index.js",
+  "scripts": {
+    "prepare": "npm run build",
+    "build": "tsc",
+    "test": "jest"
+  },
+  "files": [
+    "lib"
+  ],
+  "keywords": [
+    "typescript",
+    "morse"
+  ],
+  "author": "Matias Beckerle",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "~23.3.1",
+    "jest": "~23.5.0",
+    "ts-jest": "~23.1.4",
+    "typescript": "~3.0.3"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ],
+    "transform": {
+      "\\.ts$": "ts-jest"
+    },
+    "testRegex": "/src/.*\\.test\\.ts$"
+  }
+}
